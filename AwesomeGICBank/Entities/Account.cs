@@ -24,7 +24,7 @@
 
         public decimal GetStartingBalanceForMonth(DateTime month)
         {
-            // If the month is January, we need to get the end-of-day balance of the previous year's December.
+            
             DateTime lastDayOfPreviousMonth = month.Month == 1
                 ? new DateTime(month.Year - 1, 12, DateTime.DaysInMonth(month.Year - 1, 12))
                 : new DateTime(month.Year, month.Month - 1, DateTime.DaysInMonth(month.Year, month.Month - 1));
